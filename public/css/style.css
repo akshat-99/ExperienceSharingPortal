@@ -1,0 +1,18 @@
+body {
+  padding-top: 3.5rem;
+}
+
+a {
+  color: #00B7FF;
+}
+.error{
+  color: #a94442;
+  background-color: #f2dede;
+  border: #ebccd1;
+}
+
+.success{
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: #d6e9c6;
+}

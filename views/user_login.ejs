@@ -1,0 +1,18 @@
+<%- include('./partials/header') %>
+<br>
+<div  class="container">
+    <form class="form-signin" method="POST" action="/users/login">
+        <h1 class="h3 mb-3 font-weight-normal text-capitalize text-center">Please sign in</h1>
+        <div class="form-group">
+            <label for="inputUserName">Username</label>
+            <input name="username" type="text" class="form-control" id="UserName" placeholder="Username" required autofocus >
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+
+<%- include('./partials/footer') %>

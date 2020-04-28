@@ -1,0 +1,43 @@
+<%- include('./partials/header') %>
+    <br>
+    <div  class="container">
+    <form method="POST" action ='/users/register'>
+        <div class="form-group">
+            <label for="inputUserName">Name</label>
+            <input name="name" type="text" class="form-control" id="exampleInputPassword1" placeholder="Your Name" required autofocus>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Enter email" required >
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Current year</label>
+                <select name="year" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required >
+                    <option value="First">First</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                    <option value="Fourth">Fourth</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputUserName">Username</label>
+            <input name="username" type="text" class="form-control" id="exampleInputPassword1 " required placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+                   placeholder="Password" required >
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Reenter Password</label>
+            <input name="password2" type="password" class="form-control" id="exampleInputPassword1"
+                   placeholder="Password" required >
+        </div>
+        <button type="submit" class="btn btn-primary">Create account</button>
+    </form>
+    </div>
+
+<%- include('./partials/footer') %>
